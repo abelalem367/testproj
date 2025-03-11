@@ -1,0 +1,18 @@
+{
+  "extends": "@tsconfig/node20/tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./dist",                         // Output folder for compiled JS
+    "rootDir": "./src",                         // Root folder for source TypeScript files
+    "forceConsistentCasingInFileNames": true,    // Ensure file name case consistency
+    "experimentalDecorators": true,              // Enable experimental decorators
+    "emitDecoratorMetadata": true,               // Emit metadata for decorators
+    "module": "CommonJS",                        // Set module system to CommonJS
+    "target": "ES6",                             // Target ES6 or later for modern JavaScript features
+    "moduleResolution": "node",                  // Module resolution strategy for Node.js
+    "esModuleInterop": true,                     // Allow default imports from CommonJS modules
+    "skipLibCheck": true,                        // Skip checking of type declarations
+    "resolveJsonModule": true                    // Allow importing .json files as modules
+  },
+  "include": ["src/**/*"],                        // Include all TypeScript files in src folder
+  "exclude": ["node_modules", "dist"]             // Exclude node_modules and dist folders
+}
